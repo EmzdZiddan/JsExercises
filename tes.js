@@ -1,4 +1,6 @@
-const p = document.getElementsByTagName('p');
-for (let i = 0; i < 3; i++) {
-  p[i].style.backgroundColor = 'lightblue';
-}
+let pBaru = document.createElement('p');
+const isiTeks = document.createTextNode('Paragraf Anayar');
+pBaru.appendChild(isiTeks);
+
+const cek = document.getElementById('a');
+cek.appendChild(pBaru);
