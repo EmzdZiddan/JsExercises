@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="box" class="mx-100 p-10 bg-slate-600">
+  <ul class="font-bold text-5xl flex flex-col gap-5">
+    <li class="bg-blue-800 py-3">Ini Adalah Li Satu</li>
+    <li class="bg-blue-800 py-3">Ini Adalah Li Dua</li>
+    <li class="bg-blue-800 py-3">Ini Adalah Li Tiga</li>
+  </ul>
+</div>
+
+
+
+
+
+<div class="max-w-2xl mx-auto px-4 mt-10">
+
+
+    <!-- Card Container -->
+    <div class="bg-white rounded-2xl shadow-xl p-6">
+      <!-- Input Form -->
+      <div class="flex gap-2 mb-6">
+        <input 
+          type="text" 
+          id="todoInput" 
+          placeholder="Tambahkan tugas baru..."
+          class="flex-1 px-4 py-3 border-2 text-black border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500 transition"
+        >
+        <button 
+          id="addBtn"
+          class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold transition"
+        >
+          Tambah
+        </button>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex gap-2 mb-4">
+        <button class="filter-btn px-4 py-2 rounded-lg text-sm font-medium transition bg-indigo-500 text-white" data-filter="all">Semua</button>
+        <button class="filter-btn px-4 py-2 rounded-lg text-sm font-medium transition bg-gray-200 text-gray-600 hover:bg-gray-500" data-filter="active">Aktif</button>
+        <button class="filter-btn px-4 py-2 rounded-lg text-sm font-medium transition bg-gray-200 text-gray-600 hover:bg-gray-500" data-filter="completed">Selesai</button>
+      </div>
+
+      <!-- Todo List -->
+      <ul id="todoList" class="space-y-2 text-black">
+        <!-- Items akan ditambahkan di sini -->
+      </ul>
+
+      <!-- Stats -->
+      <div class="mt-6 pt-4 border-t border-gray-500 flex justify-between items-center text-sm text-gray-600">
+        <span id="stats">0 tugas tersisa</span>
+        <button id="clearCompleted" class="text-red-500 hover:text-red-700 font-medium">
+          Hapus Selesai
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="src/main.js"></script>
+</body>
+</html>
