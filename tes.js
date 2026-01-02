@@ -17,9 +17,9 @@ li2.before(liBaru);
 
 
 /////////////////////////////////////////////////////////////
-
+const tujuanPar = document.getElementById('#a');
 const tujuan = document.getElementsByTagName('a')[0];
-tujuan.remove();
+tujuanPar.removeChild(tujuan);
 
 /////////////////////////////////////////////////////////////
 
@@ -32,13 +32,5 @@ h2Baru.textContent = 'Judul Baru!';
 sb.replaceChild(h2Baru, p4);
 
 /////////////////////////////////////////////////////////////
-
-const cekSatu = document.querySelectorAll('p');
-
-
-/////////////////////////////////////////////////////////////
-
-
-
 
 
