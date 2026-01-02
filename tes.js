@@ -15,9 +15,9 @@ liBaru.appendChild(isiLi);
 const li2 = document.querySelector('section#b ul li:nth-child(2)');
 li2.before(liBaru);
 
-
 /////////////////////////////////////////////////////////////
-const tujuanPar = document.getElementById('#a');
+
+const tujuanPar = document.getElementById('a');
 const tujuan = document.getElementsByTagName('a')[0];
 tujuanPar.removeChild(tujuan);
 
