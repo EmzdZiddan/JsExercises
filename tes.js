@@ -33,7 +33,7 @@ sb.replaceChild(h2Baru, p4);
 
 /////////////////////////////////////////////////////////////
 
-const cekSatu = document.getElementsByClassName('cek');
+
 
 
 
