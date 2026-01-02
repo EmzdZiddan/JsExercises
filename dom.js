@@ -1,4 +1,4 @@
-// MENAMBAHKAN PARAGRAF BARU
+// MENAMBAHKAN ELEMENT 1
 const pBaru = document.createElement('p');
 const isiTeks = document.createTextNode('Paragraf Anayar');
 pBaru.appendChild(isiTeks);
@@ -7,7 +7,7 @@ const cek = document.getElementById('a');
 cek.appendChild(pBaru);
 
 
-// MANEAMBAHKAN ITEM BARU DI LIST
+// MENAMBAHKAN ELEMENT 2
 const liBaru = document.createElement('li');
 const isiLi = document.createTextNode('Item Baru woy');
 liBaru.appendChild(isiLi);
@@ -16,7 +16,7 @@ const li2 = document.querySelector('section#b ul li:nth-child(2)');
 li2.before(liBaru);
 
 
-// MENGHAPUS ELEMENe
+// MENGHAPUS ELEMENT
 const tujuanPar = document.getElementById('a');
 const tujuan = document.getElementsByTagName('a')[0];
 tujuanPar.removeChild(tujuan);
