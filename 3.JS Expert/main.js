@@ -1,8 +1,54 @@
-function cek1 () { 
-    const nama = 'galih'
-    function cek2 () { 
-        console.log(nama)
-    }
-    cek2()
-}
-cek1()
+// // Object.create
+
+// const methodeMhs = {
+//     makan : function (porsi) {
+//         this.energi += porsi
+//         console.log(`lu makan nasi ${porsi}`)
+//     },
+
+//     tidur : function (durasi) {
+//         this.energi += durasi
+//         console.log(`lu dah tidur ${durasi} jam`)
+//     }
+// }
+
+// function mahasiswa3 (nama,energi) {
+//     let data = Object.create(methodeMhs);
+//     data.nama = nama;
+//     data.energi = energi;
+//     return data;
+// }
+
+// let entry1 = mahasiswa3 ('Abah Lala',22)
+// entry1.makan(14)
+// entry1.tidur(34)
+
+// console.log(entry1)
+
+
+// Prototype
+// function mahasiswa(nama, energi) {
+//     this.nama = nama;
+//     this.energi = energi;
+// }
+
+// mahasiswa.prototype.makan = function (porsi) {
+//         this.energi += porsi
+//         console.log(`lu makan nasi ${porsi}`)
+//     }
+
+// const budi = new mahasiswa('Budi',10); console.log(budi); 
+
+
+// Closure
+
+// function cek1 () { 
+//     const nama = 'galih'
+//     function cek2 () { 
+//         console.log(nama)
+//     }
+//     cek2()
+// }
+// cek1()
+
+
