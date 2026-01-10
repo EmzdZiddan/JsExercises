@@ -74,5 +74,15 @@
 // cek1()
 
 
+// // Higher Order Function
+// function cek1 (mulai,selesai) {
+//     console.log(`ayooo mengerjakan ${mulai} okee`)
+//     selesai();
+// }
 
+// function selesai () {
+//     alert(`selesai mengerjakan`)
+// }
+
+// cek1('programming',selesai)
 
