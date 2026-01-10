@@ -26,6 +26,7 @@
 // console.log(entry1)
 
 
+
 // Prototype
 // function mahasiswa(nama, energi) {
 //     this.nama = nama;
@@ -40,6 +41,27 @@
 // const budi = new mahasiswa('Budi',10); console.log(budi); 
 
 
+
+// // Class
+// class Mahasiswa {
+//     constructor(nama, energi) {  
+//         this.energi = energi;
+//         this.nama = nama;
+//     }
+    
+//     makan(porsi) {
+//         this.energi += porsi;
+//         console.log(`lu makan nasi ${porsi}`);
+//     }
+    
+// }
+
+// const gurita = new Mahasiswa('gurita', 10);
+
+// console.log(gurita);  
+
+
+
 // Closure
 
 // function cek1 () { 
@@ -50,5 +72,7 @@
 //     cek2()
 // }
 // cek1()
+
+
 
 
