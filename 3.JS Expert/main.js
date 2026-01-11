@@ -118,34 +118,50 @@
 // const str = coba`hallo nama saya ${nama}, dan umur saya ${umur}`;
 // console.log(str)
 
-// Destructuring Assignment
-// array
-const cek = ['satu','dua','tiga'];
-const [a,b,c] = cek;
-console.log(a)
-console.log(b)
-console.log(c)
 
-// function
-function cek2 () {
-    return [5,7]
-}
 
-const [angka1,angka2] = cek2()
-console.log(angka1)
+// // Destructuring Assignment
 
-// object literal
-const cek3 = {
+// // array
+// const cek = ['satu','dua','tiga'];
+// const [a,b,c] = cek;
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// // function
+// function cek2 () {
+//     return [5,7]
+// }
+
+// const [angka1,angka2] = cek2()
+// console.log(angka1)
+
+// // object literal
+// const cek3 = {
+//     nama : 'lalapo',
+//     umur : 22
+// }
+// const {nama,umur} = cek3;
+// console.log(nama)
+
+// // object assign to new variabel
+// const cek4 = {
+//     nama : 'lalapo',
+//     umur : 22
+// }
+// const {nama:n ,umur:u} = cek4;
+// console.log(n)
+
+
+// Destructuring Function
+const identitas = {
     nama : 'lalapo',
     umur : 22
 }
-const {nama,umur} = cek3;
-console.log(nama)
 
-// object literal
-const cek4 = {
-    nama : 'lalapo',
-    umur : 22
+function mhs ({nama,umur}) {
+    return `${nama} dan ${umur}`
 }
-const {nama:n ,umur:u} = cek4;
-console.log(n)
+
+console.log(mhs(identitas))
