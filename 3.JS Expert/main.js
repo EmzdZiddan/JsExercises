@@ -108,23 +108,44 @@
 
 // Tagged Templates
 
-const nama = 'pororo';
-const umur = 15;
-const alamat = 'raroh';
+// const nama = 'pororo';
+// const umur = 15;
+// const alamat = 'raroh';
 
-function coba (a,...values) {
-    return a.reduce((result,str,i) => `${result}${str}${values[i] || ''}`,'')
+// function coba (a,...values) {
+//     return a.reduce((result,str,i) => `${result}${str}${values[i] || ''}`,'')
+// }
+// const str = coba`hallo nama saya ${nama}, dan umur saya ${umur}`;
+// console.log(str)
+
+// Destructuring Assignment
+// array
+const cek = ['satu','dua','tiga'];
+const [a,b,c] = cek;
+console.log(a)
+console.log(b)
+console.log(c)
+
+// function
+function cek2 () {
+    return [5,7]
 }
-const str = coba`hallo nama saya ${nama}, dan umur saya ${umur}`;
-console.log(str)
 
+const [angka1,angka2] = cek2()
+console.log(angka1)
 
+// object literal
+const cek3 = {
+    nama : 'lalapo',
+    umur : 22
+}
+const {nama,umur} = cek3;
+console.log(nama)
 
-// let isi = ['jeruk','manggis','pisang','durian']
-
-let angka = [10, 20, 30]
-
-
-let total = angka.reduce((a, b, c) => `${a}, ${b}, ini ce ${c}`)
-console.log(total)
-
+// object literal
+const cek4 = {
+    nama : 'lalapo',
+    umur : 22
+}
+const {nama:n ,umur:u} = cek4;
+console.log(n)
