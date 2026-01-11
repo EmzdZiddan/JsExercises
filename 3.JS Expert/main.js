@@ -74,7 +74,9 @@
 // cek1()
 
 
+
 // // Higher Order Function
+
 // function cek1 (mulai,selesai) {
 //     console.log(`ayooo mengerjakan ${mulai} okee`)
 //     selesai();
@@ -88,28 +90,34 @@
 
 
 
+// const angka = [-1,-3,-4,2,5,6,7,8]
 
-const angka = [-1,-3,-4,2,5,6,7,8]
+// const newAngka1 = angka.filter(a => a >= 5);
+// console.log(newAngka1)
 
-const newAngka1 = angka.filter(a => a >= 5);
-console.log(newAngka1)
+// const newAngka2 = angka.map(a => a*2)
+// console.log(newAngka2)
 
-const newAngka2 = angka.map(a => a*2)
-console.log(newAngka2)
+// const newAngka3 = angka.reduce((a,b) => a + b)
+// console.log(newAngka3)
 
-const newAngka3 = angka.reduce((a,b) => a + b)
-console.log(newAngka3)
-
-// Methode Chaining
-const newAngka4 = angka.filter(a => a >= 5).map(a => a*5)
-console.log(newAngka4)
-
+// // Methode Chaining
+// const newAngka4 = angka.filter(a => a >= 5).map(a => a*5)
+// console.log(newAngka4)
 
 
+// Tagged Templates
 
-let tes = document.querySelector('.isi');
-let judul = document.createElement('h1');
-judul.textContent = 'lalal';
+const nama = 'pororo';
+const umur = 15;
+const alamat = 'raroh';
 
-tes.append(judul)
-    
+function coba (a,...values) {
+    return a.reduce((result,str,i) => `${result}${str}${values[i] || ''}`,'')
+}
+
+const str = coba`hallo nama saya ${nama}, dan umur saya ${umur}`;
+console.log(str)
+
+
+
