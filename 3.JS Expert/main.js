@@ -115,9 +115,16 @@ const alamat = 'raroh';
 function coba (a,...values) {
     return a.reduce((result,str,i) => `${result}${str}${values[i] || ''}`,'')
 }
-
 const str = coba`hallo nama saya ${nama}, dan umur saya ${umur}`;
 console.log(str)
 
 
+
+// let isi = ['jeruk','manggis','pisang','durian']
+
+let angka = [10, 20, 30]
+
+
+let total = angka.reduce((a, b, c) => `${a}, ${b}, ini ce ${c}`)
+console.log(total)
 
