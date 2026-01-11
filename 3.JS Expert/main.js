@@ -86,3 +86,30 @@
 
 // cek1('programming',selesai)
 
+
+
+
+const angka = [-1,-3,-4,2,5,6,7,8]
+
+const newAngka1 = angka.filter(a => a >= 5);
+console.log(newAngka1)
+
+const newAngka2 = angka.map(a => a*2)
+console.log(newAngka2)
+
+const newAngka3 = angka.reduce((a,b) => a + b)
+console.log(newAngka3)
+
+// Methode Chaining
+const newAngka4 = angka.filter(a => a >= 5).map(a => a*5)
+console.log(newAngka4)
+
+
+
+
+let tes = document.querySelector('.isi');
+let judul = document.createElement('h1');
+judul.textContent = 'lalal';
+
+tes.append(judul)
+    
