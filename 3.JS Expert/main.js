@@ -203,3 +203,50 @@
 //     return arg
 // }
 // console.log(cek(4,5))
+
+
+
+// // Synchronus Callback
+
+// function tampilPesan (panggil) {
+//     const nama = prompt('masukkan nama')
+//     panggil(nama)
+// }
+
+// function hallo (nama) {
+//     alert (`hallo , ${nama}`)
+// }
+// tampilPesan(hallo)
+
+
+///
+
+// function pesan (panggil) {
+//     const nama = prompt('masuukan nama')
+//     alert(`hallo ${nama}`)
+//     panggil(nama)
+// }  
+
+// function semangat (nama) {
+//     alert(`Semangat ${nama}`)
+// }
+
+// pesan(semangat)
+
+
+
+
+
+
+
+
+$.ajax({
+  url: 'https://jsonplaceholder.typicode.com/posts/1',
+  method: 'GET',
+  success: function(data) {
+    console.log(data);
+  },
+  error: function(error) {
+    console.error(error);
+  }
+});
