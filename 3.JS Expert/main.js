@@ -219,34 +219,62 @@
 // tampilPesan(hallo)
 
 
-///
-
-// function pesan (panggil) {
-//     const nama = prompt('masuukan nama')
-//     alert(`hallo ${nama}`)
-//     panggil(nama)
-// }  
-
-// function semangat (nama) {
-//     alert(`Semangat ${nama}`)
-// }
-
-// pesan(semangat)
+// $.ajax({
+//   url: 'mahasiswa.json',
+//   method: 'GET',
+//   success: (mhs) => {
+//     mhs.forEach((m)=> console.log(m.nama))
+//   },
+//   error: function(error) {
+//     console.error(error);
+//   }
+// });
 
 
+// fetch('mahasiswa.json')
+// .then(response => response.json())
+// .then(response => console.log(response))
+
+
+// janji (terpenuhi/ingkar)
+// states (fulfilled / rejected / pending)
+
+// callback (resolve,reject) parameter di dalam promise
+// aksi (then,catch,finally)
+
+// let ditepati = true;
+
+// const janji1 = new Promise((resolve,reject) =>{
+//     if (ditepati) {
+//         resolve('janji telah ditepati')
+//     } else {
+//         reject('janji tidak ditepati')
+//     }
+// })
+
+// janji1
+//     .then(response => console.log(response + ' OKE'))
+//     .catch(response => console.log(response + ' NOT OKE'))
+//     .finally(() => console.log(' Terimakasih telah menunggu'))
 
 
 
 
+function simulasiLogin(username, password) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (username === 'admin' && password === '1234') {
+        resolve({ 
+          user: username, 
+          token: 'xyz987zxc' 
+        });
+      } else {
+        reject('Username atau password salah!');
+      }
+    }, 1500);
+  });
+}
 
-
-$.ajax({
-  url: 'https://jsonplaceholder.typicode.com/posts/1',
-  method: 'GET',
-  success: function(data) {
-    console.log(data);
-  },
-  error: function(error) {
-    console.error(error);
-  }
-});
+simulasiLogin('admin', '1234')
+  .then(user => console.table('Login berhasil:', user))
+  .catch(err => console.log('Login gagal:', err));

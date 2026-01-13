@@ -1,0 +1,35 @@
+[{
+  "nama": "Ahmad Fauzi",
+  "nrp": "043040024",
+  "email": "ahmadfauzi@student.unpas.ac.id",
+  "jurusan": "Teknik Informatika",
+  "idDosenWali": 1
+},
+{
+  "nama": "Rina Oktaviani",
+  "nrp": "133040124",
+  "email": "rina.okta@gmail.com",
+  "jurusan": "Teknik Informatika",
+  "idDosenWali": 2
+},
+{
+  "nama": "Budi Santoso",
+  "nrp": "133040125",
+  "email": "budi.santoso@gmail.com",
+  "jurusan": "Teknik Informatika",
+  "idDosenWali": 3
+},
+{
+  "nama": "Siti Aisyah",
+  "nrp": "043040025",
+  "email": "siti.aisyah@student.unpas.ac.id",
+  "jurusan": "Teknik Informatika",
+  "idDosenWali": 1
+},
+{
+  "nama": "Dimas Pratama",
+  "nrp": "133040126",
+  "email": "dimas.pratama@gmail.com",
+  "jurusan": "Teknik Informatika",
+  "idDosenWali": 2
+}]
