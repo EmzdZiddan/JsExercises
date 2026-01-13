@@ -154,14 +154,52 @@
 // console.log(n)
 
 
-// Destructuring Function
-const identitas = {
-    nama : 'lalapo',
-    umur : 22
-}
+// // Destructuring Function
+// const identitas = {
+//     nama : 'lalapo',
+//     umur : 22
+// }
 
-function mhs ({nama,umur}) {
-    return `${nama} dan ${umur}`
-}
+// function mhs ({nama,umur}) {
+//     return `${nama} dan ${umur}`
+// }
 
-console.log(mhs(identitas))
+// console.log(mhs(identitas))
+
+
+
+// // for in
+// const name = {nama:'dodi',umur:22}
+
+// for(const a in name) {
+//     console.log(a)
+// }
+
+// // for of
+// const nama = ['lala','dodi','dufan']
+
+// for(const a of nama) {
+//     console.log(a)
+// }
+
+// function jumlahkanAngka () {
+//     let jumlah = 0;
+//     for(a of arguments){
+//         jumlah += a
+//     }
+//     return jumlah;
+// }
+// console.log(jumlahkanAngka(1,2,3,4,5));
+
+
+// // Spread Operator
+// const hobi1 = ['coding','berenang','meditasi']
+// const hobi2 = ['musik','game','travel']
+// const gabung = [...hobi1, ...hobi2]
+// console.log(gabung)
+
+// // Rest Parameter
+// const cek = (...arg) => { 
+//     return arg
+// }
+// console.log(cek(4,5))
